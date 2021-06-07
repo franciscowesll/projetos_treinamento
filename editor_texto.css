@@ -1,0 +1,91 @@
+html, body{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+}
+
+#main{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	box-sizing: border-box;
+}
+
+
+/*------------------------------------------------------------------------------------------------*/
+/* elementos da barra principal*/
+
+#barra_principal{
+	background-image: linear-gradient(35deg, white, lightblue); 
+	width: 100%;
+	height: 40px;
+	position: absolute;
+	display: flex;
+
+}
+
+
+#arquivo, #salvar, #imprimir{
+	padding-right: 30px;
+	text-align: center;
+	box-sizing: border-box;
+	width: 75px;
+	height: 40px;
+	padding-top: 10px;
+}
+
+#arquivo{
+	padding-left: 10px;
+}
+
+#salvar{
+	padding-left: 18px;
+}
+
+#imprimir{
+	padding-left: 10px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+/*elementos da barra de ferramentas*/
+
+#barra_ferramentas{
+	background-image: linear-gradient(65deg, #c4c4c4, gray);
+	width: 100%;
+	height: 30px;
+	margin-top: 40px;
+	position: absolute;
+	display: flex;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+/*elementos do campo de texto*/
+
+
+
+
+#campo_texto{
+	border: 1px solid gray;
+	width: 100%;
+	height: 600px;
+	display: flex;
+	margin-top: 70px;
+	
+}
+
+
+/*------------------------------------------------------------------------------- 
+			pseudo-classes												*/
+
+#arquivo:hover, #salvar:hover, #imprimir:hover{
+	background-color: lightblue;
+	font-size
+}
