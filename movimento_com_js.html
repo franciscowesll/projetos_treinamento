@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="movimento_com_js.css">
+	<title></title>
+</head>
+<body>
+	<div id="body" class="body">
+		<div class="texto"><h3>Clique sobre os 4 elementos. Eles se movimentarão</h3>
+		<br>Se clicar neles enquanto se movimento, eles voltarão para a posição de origem</br></div>
+		<div id="campo_de_preenchimento" class="campo_de_preenchimento">
+			<div id="quadrado1" class="quadrado1"> <p>1</p> </div>
+			<div id="quadrado2" class="quadrado2" onclick="movimento2"> <p>2</p> </div>
+			<div id="quadrado3" class="quadrado3" onclick="movimento1"> <p>3</p> </div>
+			<div id="quadrado4" class="quadrado4" onclick="movimento1"> <p>4</p> </div>
+		</div>
+		<div>
+			<p id="1">  <span id="s1"></span></p>
+			<p id="2"><span id="s2"></span></p>
+			<p id="3"><span id="s3"></span></p>
+			<p id="4"><span id="s4"></span></p>
+
+		</div>
+	</div>
+
+</body>
+<script type="text/javascript">	
+var quad1 = document.getElementById('quadrado1');
+var quad2 = document.getElementById('quadrado2');
+var quad3 = document.getElementById('quadrado3');
+var quad4 = document.getElementById('quadrado4');
+
+
+
+
+		
+		
+		
+	quad1.addEventListener('click', function loop(){
+	
+	 
+		
+		if (quad1.style.backgroundColor == "green"){
+			
+			quad1.style.marginTop = "150px";
+			quad1.style.marginLeft = "150px";
+			quad1.style.backgroundColor = "red";
+			
+			
+			}
+			else {
+			
+			quad1.style.marginTop = "0px";
+			quad1.style.marginLeft = "0px";		
+			quad1.style.backgroundColor = "green";
+				
+			}
+
+	});
+ 
+	
+
+
+quad2.addEventListener('click', function loop2(){
+		if (quad2.style.backgroundColor == "green"){
+			
+			quad2.style.marginTop = "150px";
+			quad2.style.marginLeft = "250px";
+			quad2.style.backgroundColor = "red";
+			
+			
+		}
+		else {
+			
+			quad2.style.marginTop = "0px";
+			quad2.style.marginLeft = "400px";		
+			quad2.style.backgroundColor = "green";
+				
+		}
+
+});
+
+quad3.addEventListener('click', function loop3(){
+			
+		if (quad3.style.backgroundColor == "green"){
+			
+			quad3.style.marginTop = "250px";
+			quad3.style.marginLeft = "150px";
+			quad3.style.backgroundColor = "red";
+			
+			
+			}
+			else {
+			
+			quad3.style.marginTop = "400px";
+			quad3.style.marginLeft = "0px";		
+			quad3.style.backgroundColor = "green";
+				
+			}
+
+});
+
+quad4.addEventListener('click', function loop4(){
+		if (quad4.style.backgroundColor == "green"){
+			
+			quad4.style.marginTop = "250px";
+			quad4.style.marginLeft = "250px";
+			quad4.style.backgroundColor = "red";
+			
+			
+		}
+		else {
+			
+			quad4.style.marginTop = "400px";
+			quad4.style.marginLeft = "400px";		
+			quad4.style.backgroundColor = "green";
+				
+			}
+
+});
+loop();
+lopp2();
+loop3();
+loop4();
+
+
+
+
+
+
+</script>
+</html>
