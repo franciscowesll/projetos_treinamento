@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="editor_texto.css">
+	
 	<title>Editor de Texto</title>
 </head>
 <body>
@@ -14,15 +15,37 @@
 		</section>	
 
 		<section id="barra_ferramentas">
-			<div class="t_size"><label>T</label><input type="text" name="size" id="t_size"></div>
-			<div class="alinhamento"><input type="checkbox" name="alinhamento" id="alinhamento"></div>
+			<div class="c_size">
+				<label id="label">T </label>
+				<input type="number" name="size" id="t_size" min="0" maxlength="2" >
+			</div>
+			
+			<div class="alinhamento"><input type="checkbox" id="center">C</div>
 
 		</section>
 		
 		<section id="campo_texto">
+			<textarea id="text_area"></textarea>
 			
 		</section>
 	</div>
 
+
+
+
+<script type="text/javascript" >
+	var t_size = document.getElementById("t_size");
+	var t_center = document.getElementById("center");
+	var text_area = document.getElementById("text_area");
+
+t_size.addEventListener('change', function(){
+	var t_sizer = document.getElementById("t_size").value;
+	var text_area = document.getElementById("text_area");
+	text_area.style.fontSize = t_sizer+"px";
+})
+
+
+
+</script>
 </body>
 </html>
