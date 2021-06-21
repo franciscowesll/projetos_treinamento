@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="description" content="Border Radius manipuave">
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="border_radius.css">
+
+	<title></title>
+
+
+
+</head>
+<body>
+	<div  class="main">
+		<div class="input_main">
+			
+				<p>Digite os valores para que o quadrado ao lado mude sua forma</p>
+				<p><input id="a" class="input" type="text">TOPLEFT</p>
+				<p><input id="b" class="input" type="text">TOPRIGHT</p>
+				<p><input id="c" class="input" type="text">DOWNRIGHT</p>
+				<p><input id="d" class="input" type="text">DOWNLEFT</p>
+				
+				<button id="bott" >Alterar</button>
+				
+				
+		</div>
+		<div id="radius" class="radius"> </div>
+		<section id="textarea" class="textarea">
+			<p>border-radius:<textarea id="t_area"></textarea></p>
+		</section>
+	</div>
+
+	<script type="text/javascript">
+		
+	
+		var bottom = document.getElementById("bott");
+		
+		bottom.addEventListener('click', function(){
+		var t_radius = document.getElementById("t_area");
+		var radius = document.getElementById("radius");
+		var a1 = document.getElementById("a").value;
+		var b1 = document.getElementById("b").value;
+		var c1 = document.getElementById("c").value;
+		var d1 = document.getElementById("d").value;
+		
+			radius.style.borderTopLeftRadius = a1+"px";
+			radius.style.borderTopRightRadius = b1+"px";
+			radius.style.borderBottomRightRadius = c1+"px";
+			radius.style.borderBottomLeftRadius = d1+"px";
+			t_radius.innerHTML = a1+"px " + b1+"px " + c1+"px " + d1+"px"; 
+		});
+			
+
+
+
+	</script>
+</body>
+</html>
