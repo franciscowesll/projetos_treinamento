@@ -1,0 +1,63 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body, html{
+	background: url('rio.jpg') no-repeat;
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	margin-top: 600px;
+	margin-left: -100px;
+	width: 500px;
+	height: 300px;
+	box-sizing: border-box;
+	display: grid;
+	grid-template-areas: "box" "boxMirror";
+	background: transparent;
+	
+
+}
+
+.box{
+	width: 500px;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	
+	grid-area: box;
+}
+
+.box p{
+	text-align: center;
+	color: white;
+	font-size: 100px;
+	font-weight: 600;
+	letter-spacing: 3px;
+	position: relative;
+}
+
+.box p::after{
+	content: attr(title);
+
+	position: absolute;
+	bottom: 47px;
+	left: 0;
+	transform: scale3d(1,-1.5,1);
+	transform-origin: bottom;
+	background: linear-gradient(to bottom, rgba(0,0,0,0)30%, rgba(0,0,0,0.5)80%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+}
+
